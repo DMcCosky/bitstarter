@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 app.use(express.logger());
-varout = fs.readFileSync(index.html)
+var varout = fs.readFileSync(index.html)
 
 app.get('/', function(request, response) {
   response.send(varout);
