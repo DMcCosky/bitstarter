@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 app.use(express.logger());
-var varout = fs.readFileSync('/index.html')
+fs = require('fs');
+var varout = fs.readFileSync('https://github.com/DMcCosky/bitstarter/index.html', ascii);
 
 app.get('/', function(request, response) {
   response.send(varout);
