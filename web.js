@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 app.use(express.logger());
 fs = require('fs');
-var varout = fs.readFileSync('https://github.com/DMcCosky/bitstarter/index.html', ascii);
+var varout = fs.readFileSync('index.html', 'utf-8');
 
 app.get('/', function(request, response) {
   response.send(varout);
